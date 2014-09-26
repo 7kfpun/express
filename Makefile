@@ -3,6 +3,11 @@
 help:
 	@egrep "^# target:" [Mm]akefile | sed -e 's/^# target: //g'
 
+.PHONY: npm
+# target: npm - npm package install
+npm:
+	@cd express && npm install
+
 .PHONY: run
 # target: run - Run node server
 run:

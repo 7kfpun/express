@@ -1,20 +1,21 @@
 {
-  "name": "rest-api-express",
-  "version": "0.0.4",
+  "name": "express",
+  "version": "0.0.0",
   "description": "",
   "main": "express.js",
   "scripts": {
     "start": "node express.js",
-    "test": "mocha express.test.js"
+    "devserver": "./node_modules/nodemon/bin/nodemon.js --debug express.js",
+    "test": "./node_modules/mocha/bin/mocha express.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/azat-co/rest-api-express.git"
+    "url": "git@github.com:7kfpun/express.git"
   },
-  "author": "Azat Mardan",
-  "license": "BSD-2-Clause",
+  "author": "kf",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/azat-co/rest-api-express/issues"
+    "url": "https://github.com/7kfpun/express/issues"
   },
   "dependencies": {
     "mongoskin": "1.4.1",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "expect.js": "0.3.1",
+    "nodemon": "1.2.1",
     "mocha": "1.18.2",
     "superagent": "0.17.0"
   }
